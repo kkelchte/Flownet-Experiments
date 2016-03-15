@@ -1,0 +1,8 @@
+/esat/qayd/kkelchte/flownet-release/models/flownet/data/0000000-gt.flo
+/esat/qayd/kkelchte/flownet-release/models/flownet/data/0000001-gt.flo
+/esat/qayd/kkelchte/flownet-release/models/flownet/data/0000002-gt.flo
+/esat/qayd/kkelchte/flownet-release/models/flownet/data/0000003-gt.flo
+/esat/qayd/kkelchte/flownet-release/models/flownet/data/0000004-gt.flo
+/esat/qayd/kkelchte/flownet-release/models/flownet/data/0000005-gt.flo
+/esat/qayd/kkelchte/flownet-release/models/flownet/data/0000006-gt.flo
+/esat/qayd/kkelchte/flownet-release/models/flownet/data/0000007-gt.flo

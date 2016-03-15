@@ -1,0 +1,29 @@
+Universe         = vanilla
+
+RequestCpus      = 1
+Request_GPUs	 = 1
+RequestMemory    = 4G
+##RequestDisk      = 25G
+
++RequestWalltime = 864000
+
+Requirements = (CUDAGlobalMemoryMb > 2000)&& ( CUDADeviceName == "GeForce GTX 960" || CUDADeviceName == "GeForce GTX 980" )
+
+##Requirements = ((machine == "vega.esat.kuleuven.be") || (machine == "wasat.esat.kuleuven.be") || (machine == "yildun.esat.kuleuven.be"))
+
+
+Initialdir =/users/visics/kkelchte/Matlab/myPCNN
+
+Executable =/users/visics/kkelchte/Matlab/myPCNN/run_the_thing.sh
+
+Log 	= condor_output/condor_train.log
+
+Output       = condor_output/condor_train.out
+
+Error        = condor_output/condor_train.err
+
+Notification = Always
+Queue
+
+
+
