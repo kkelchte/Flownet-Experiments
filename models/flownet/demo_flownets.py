@@ -8,6 +8,9 @@ img_size_bin = './bin/get_image_size'
 
 template = 'model/deploy.tpl.prototxt'
 
+caffemodel = 'model/flow_batchsize_4.caffemodel'
+#caffemodel = 'model/flownet_official.caffemodel'
+
 # =========================================================
 # Add load library paths for python
 os.environ['LD_LIBRARY_PATH'] = '$LD_LIBRARY_PATH:/usr/local/cuda-7.5/targets/x86_64-linux/lib:/users/visics/kkelchte/local/lib/cudnn-v3.0/lib64/'
@@ -157,7 +160,7 @@ with open('tmp/deploy.prototxt', "w") as tfile:
 # Run caffe
 
 args = [caffe_bin, 'test', '-model', 'tmp/deploy.prototxt',
-        '-weights', 'model/flownet_official.caffemodel',
+        '-weights', caffemodel,
         '-iterations', str(list_length),
         '-gpu', '0']
 
